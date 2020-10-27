@@ -1,0 +1,126 @@
+{
+  "el-input__trim": {
+    "prefix": "el-input__trim",
+    "body": [
+      "<el-input v-model.trim=\"${1}\" placeholder=\"请输入${2}\" size='small'></el-input>"
+    ]
+  },
+  "el-input__number": {
+    "prefix": "el-input__number",
+    "body": [
+      "<el-input v-model.number=\"${1}\" placeholder=\"请输入${2}\" size='small'></el-input>"
+    ]
+  },
+  "el-input_checkbox__single": {
+    "prefix": "el-input__checkbox--single",
+    "body": ["<el-checkbox v-model=\"${1}\" label=\"true\">${3}</el-checkbox>"]
+  },
+  "el-input_checkbox__group": {
+    "prefix": "el-input__checkbox--group",
+    "body": [
+      "<el-checkbox-group v-model=\"${1}\">",
+      "\t <el-checkbox  :label=\"${2}\">${2}</el-checkbox>",
+      "</el-checkbox-group>"
+    ]
+  },
+  "el-input__switch": {
+    "prefix": "el-input__switch",
+    "body": [
+      "<el-switch v-model=\"${1}\" active-color=\"#1783fb\" inactive-color=\"#BFBFBF\" :active-value='true' :inactive-value='false'></el-switch>"
+    ]
+  },
+  "el-input__select": {
+    "prefix": "el-input__select",
+    "body": [
+      "\t<el-select v-model=\"${1}\" clearable placeholder=\"请选择${2}\">",
+      "\t\t<el-option v-for=\"item in ${4}\" :key=\"item.value\" :label=\"item.label\" :value=\"item.value\">",
+      "\t\t</el-option>",
+      "\t</el-select>"
+    ]
+  },
+  "el-input__textarea": {
+    "prefix": "el-input__textarea",
+    "body": [
+      "<el-input :rows=\"2\" v-model=\"$1\" type=\"textarea\"  placeholder=\"请输入${2}\" @blur=\"${3}\"/>"
+    ]
+  },
+  "el-input__radio": {
+    "prefix": "el-input__radio",
+    "body": [
+      "<el-radio-group v-model=\"${1}\">",
+      "\t <el-radio :label=\"${2}\">${2}</el-radio>",
+      "</el-radio-group>"
+    ]
+  },
+
+  "el-input_trim__query": {
+    "prefix": "el-input__trim--query",
+    "body": [
+      "<el-input v-model.trim=\"query.${1}\" placeholder=\"请输入${2}\"  style=\"width:200px\" @keyup.enter.native=\"${3}\"></el-input>"
+    ]
+  },
+  "el-input_number__query": {
+    "prefix": "el-input__number--query",
+    "body": [
+      "<el-input v-model.number=\"query.${1}\" placeholder=\"请输入${2}\" style=\"width:200px\" type=\"number\" @keyup.enter.native=\"${3}\"></el-input>"
+    ]
+  },
+  "el-input_checkbox__query": {
+    "prefix": "el-input__checkbox--query",
+    "body": [
+      "<el-checkbox v-model=\"${1}\" label=\"true\" @change=\"${2}\">${3}</el-checkbox>"
+    ]
+  },
+  "el-input_select__query": {
+    "prefix": "el-input__select--query",
+    "body": [
+      "\t<el-select v-model=\"query.${1}\" clearable placeholder=\"请选择${2}\" @change=\"${3}\">",
+      "\t\t<el-option v-for=\"item in ${4}\" :key=\"item.value\" :label=\"item.label\" :value=\"item.value\">",
+      "\t\t</el-option>",
+      "\t</el-select>"
+    ]
+  },
+  "el-input__suffix": {
+    "prefix": "el-input__suffix",
+    "body": [
+      "<el-input placeholder=\"请选择\" v-model='' size=\"small\">",
+      "<template slot=\"suffix\">",
+      "<svg-icon type='jf-icon-' :size='16' color=''></svg-icon>",
+      "</template>",
+      "</el-input>"
+    ]
+  },
+  "el-input__prefix": {
+    "prefix": "el-input__prefix",
+    "body": [
+      "<el-input placeholder=\"请选择\" v-model='' size=\"small\">",
+      "<template slot=\"prefix\">",
+      "<svg-icon type='jf-icon-' :size='16' color=''></svg-icon>",
+      "</template>",
+      "</el-input>"
+    ]
+  },
+  "el-input__append": {
+    "prefix": "el-input__append",
+    "body": [
+      "<el-input placeholder=\"请选择\" v-model='' size=\"small\">",
+      "<template slot=\"append\">",
+      "</template>",
+      "</el-input>"
+    ]
+  },
+  "el-input__prepend": {
+    "prefix": "el-input__prepend",
+    "body": [
+      "<el-input placeholder=\"请选择\" v-model='' size=\"small\">",
+      "<template slot=\"prepend\">",
+      "</template>",
+      "</el-input>"
+    ]
+  },
+
+
+
+
+
+}

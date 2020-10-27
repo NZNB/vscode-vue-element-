@@ -1,0 +1,91 @@
+{
+    "dbutils.button.code-snippet": {
+		"prefix": "dbutils.button.code-snippet",
+		"body": [
+			""
+		],
+		"description": "按钮片段"
+	},
+	"el-button_add__html": {
+		"prefix": "el-button_add__html",
+		"body": [
+			"<el-button size=\"small\" type=\"primary\" @click=\"add\">添加</el-button>"
+		],
+		"description": "按钮-添加"
+	},
+	"el-button_save__html": {
+		"prefix": "el-button_save__html",
+		"body": [
+			"<el-button size=\"small\" type=\"primary\" @click=\"save('ruleForm')\">保存</el-button>"
+		],
+		"description": "按钮-保存"
+	},
+	"el-button_reset__html": {
+		"prefix": "el-button_reset__html",
+		"body": [
+			"<el-button size=\"small\" @click=\"reset('ruleForm')\">重置</el-button>"
+		],
+		"description": "按钮-重置"
+	},
+	"el-button_cancel__html": {
+		"prefix": "el-button_cancel__html",
+		"body": [
+			"<el-button size=\"small\" @click=\"cancel\">取消</el-button>"
+		],
+		"description": "按钮-取消"
+    },
+    "el-button__primary": {
+        "prefix": "el-button__primary",
+        "body": [
+          "<el-button size=\"small\" type=\"primary\" @click=\"${1}\">${2}</el-button>"
+        ]
+      },
+      "el-button__success": {
+        "prefix": "el-button__success",
+        "body": [
+          "<el-button size=\"small\" type=\"success\" @click=\"${1}\">${2}</el-button>"
+        ]
+      },
+      "el-button__warning": {
+        "prefix": "el-button__warning",
+        "body": [
+          "<el-button size=\"small\" type=\"warning\" @click=\"${1}\">${2}</el-button>"
+        ]
+      },
+      "el-button__danger": {
+        "prefix": "el-button__danger",
+        "body": [
+          "<el-button size=\"small\" type=\"danger\" @click=\"${1}\">${2}</el-button>"
+        ]
+      },
+      "el-button__searchIcon ": {
+        "prefix": "el-button_searchIcon",
+        "body": [
+          "<el-button size==\"small\" type=\"primary\" style=\"margin-left: 10px\" icon=\"el-icon-search\" @click=\"${1}\">搜索</el-button>"
+        ]
+      },
+      "el-button__export-icon ": {
+        "prefix": "el-button_exportIcon",
+        "body": [
+          "<el-button :loading=\"downloadLoading\" size==\"small\" type=\"primary\" style=\"margin-left: 10px\" icon=\"el-icon-download\" @click=\"handleDownload\">导出</el-button>"
+        ]
+      },
+      "el-button__create-icon": {
+        "prefix": "el-button_createIcon",
+        "body": [
+          "<el-button size==\"small\" type=\"primary\" style=\"margin-left: 10px\" icon=\"el-icon-edit-outline\" @click=\"${1}\">创建</el-button>"
+        ]
+      },
+      "el-button__add-icon": {
+        "prefix": "el-button_addIcon",
+        "body": [
+          "<el-button size==\"small\" type=\"primary\" style=\"margin-left: 10px\" icon=\"el-icon-plus\" @click=\"${1}\">新增</el-button>"
+        ]
+      },
+      "el-button__delete-icon": {
+        "prefix": "el-button_deleteIcon",
+        "body": [
+          "<el-button size==\"small\" type=\"primary\" style=\"margin-left: 10px\" icon=\"el-icon-minus\" @click=\"${1}\">新增</el-button>"
+        ]
+      }
+}

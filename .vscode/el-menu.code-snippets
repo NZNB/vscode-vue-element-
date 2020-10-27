@@ -1,0 +1,55 @@
+{
+  "el-menu__html": {
+    "prefix": "el-menu__html",
+    "description": "el_menu__html",
+    "body": [
+      "<el-menu",
+      "default-active=\"1\"",
+      "background-color=\"#fff\"",
+      "text-color=\"#fff\"",
+      "active-text-color=\"#ffd04b\"",
+      "router",
+      "@close=\"handleClose\"",
+     "@open=\"handleOpen\">",
+      "<el-menu-item index=\"\">",
+      "<span slot=\"title\">导航一</span>",
+      "</el-menu-item>",
+     "<el-menu-item index=\"\">",
+      "<span slot=\"title\">导航二</span>",
+      "</el-menu-item>",
+      "<el-menu-item index=\"\">",
+      "<span slot=\"title\">导航三</span>",
+      "</el-menu-item>",
+      "<el-menu-item index=\"\">",
+      "<span slot=\"title\">导航四</span>",
+      "</el-menu-item>",
+      "</el-menu>"
+    ]
+  },
+  "el-menu_item__html": {
+    "prefix": "el-menu_item__html",
+    "description": "el_menu_item__html",
+    "body": [
+      "<el-menu-item index=\"\">",
+      "<span slot=\"title\">导航一</span>",
+      "</el-menu-item>"
+    ]
+  },
+  "el-submenu__html": {
+    "prefix": "el-submenu__html",
+    "description": "el_submenu__html",
+    "body": [
+      "<el-submenu index=\"\">",
+      "<span slot=\"title\">导航一</span>",
+      " <el-menu-item index=\"2\">",
+      "<i class=\"el-icon-menu\"></i>",
+      "<span slot=\"title\">导航二</span>",
+      " </el-menu-item>",
+      "<el-menu-item index=\"3\">",
+      " <i class=\"el-icon-document\"></i>",
+      " <span slot=\"title\">导航三</span>",
+      "</el-menu-item>",
+      "</el-submenu>"
+    ]
+  }
+}

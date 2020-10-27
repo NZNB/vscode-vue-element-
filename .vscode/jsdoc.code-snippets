@@ -1,0 +1,195 @@
+{
+	// Place your adwords 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"js_doc": {
+		"prefix": "js_doc_common",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" */"
+		],
+		"description": "注释片段"
+	},
+	"js_doc_author": {
+		"prefix": "js_doc_author",
+		"body": [
+			"宁政 <719628465@qq.com>"
+		],
+		"description": "注释-作者"
+	},
+	"js_doc_time": {
+		"prefix": "js_doc_time",
+		"body": [
+			"$CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME"
+		],
+		"description": "注释-时间"
+	},
+	"js_doc_func_param_single": {
+		"prefix": "js_doc_func_param_single",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {string} ${3:params} - 参数",
+			" */"
+		],
+		"description": "方法注释-单个参数"
+	},
+	"js_doc_func_param_multiple": {
+		"prefix": "js_doc_func_param_multiple",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {string} ${3:params}1 - 参数",
+			" * @params {string} ${3:params}2 - 参数",
+			" */"
+		],
+		"description": "方法注释-多个参数"
+	},
+	"js_doc_func_param_object": {
+		"prefix": "js_doc_func_param_object",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {Object} ${3:params} - 对象",
+			" * @params {string} ${3:params}.name - 对象的属性",
+			" * @params {string} ${3:params}.department - 对象的属性",
+			" */"
+		],
+		"description": "方法注释-对象参数"
+	},
+	"js_doc_func_param_object_array": {
+		"prefix": "js_doc_func_param_object_array",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {Object[]} ${3:params}s - 对象数组",
+			" * @params {string} ${3:params}s[].name - 对象数组元素的属性",
+			" * @params {string} ${3:params}s[].department - 对象数组元素的属性",
+			" */"
+		],
+		"description": "方法注释-对象数组参数"
+	},
+	"js_doc_func_param_optional": {
+		"prefix": "js_doc_func_param_optional",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {string} [${3:params}] - 可选参数",
+			" */"
+		],
+		"description": "方法注释-可选参数"
+	},
+	"js_doc_func_param_optional_default": {
+		"prefix": "js_doc_func_param_optional_default",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {string} [${3:params}=${4:params}] - 可选参数带默认值",
+			" */"
+		],
+		"description": "方法注释-可选参数带默认值"
+	},
+	"js_doc_func_param_any": {
+		"prefix": "js_doc_func_param_any",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {*} ${3:params} - 任意类型参数",
+			" */"
+		],
+		"description": "方法注释-任意类型参数"
+	},
+	"js_doc_func_param_callback": {
+		"prefix": "js_doc_func_param_callback",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @callback requestCallback",
+			" * @params {Object} res 请求返回数据参数",
+			" */",
+		],
+		"description": "方法注释-回调方法"
+	},
+	"js_doc_func_param_return": {
+		"prefix": "js_doc_func_param_return",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {string} ${3:params} - 参数",
+			" * @return {string} 返回值放在方法注释的最后",
+			" */"
+		],
+		"description": "方法注释-返回值"
+	},
+	"js_doc_module": {
+		"prefix": "js_doc_module",
+		"body": [
+			"/**",
+			" * @module ${TM_FILEPATH/\\\\+/\\\//g}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @desc ${3:计数器组件}",
+			" * @example <my-component :counter-initor=\"5\" :step=\"2\" />",
+			" * @vue-prop {Number} conterInitor - 组件属性，camelCase",
+			" * @vue-prop {Number} [step] - 可选组件属性",
+			" * @vue-prop {Number} [step=1] - 可选带默认值组件属性",
+			" * @vue-data {Number} counter - 组件数据",
+			" * @vue-computed {String} message - 计算属性",
+			" * @vue-event {Number} increment - 计数器增加后，触发事件",
+			" * @vue-event {Number} decrement - 计数器减小后，触发事件",
+			" * https://github.com/Kocal/jsdoc-vuejs",
+			" */"
+		],
+		"description": "vue组件注释"
+	},
+	"js_doc_function": {
+		"prefix": "js_doc_function",
+		"body": [
+			"/**",
+			" * ${1:方法名称}",
+			" * @author 宁政 <719628465@qq.com>",
+			" * @time $CURRENT_YEAR年$CURRENT_MONTH月$CURRENT_DATE日 $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_DAY_NAME",
+			" * @params {Object} params - 对象",
+			" * @params {string} params - 参数",
+			" * @params {string} paramss[].name - 对象数组元素的属性",
+			" * @params {string} [params] - 可选参数",
+			" * @returns {Promise} 返回一个Promise",
+			" */"
+		],
+		"description": "注释片段"
+	},
+}

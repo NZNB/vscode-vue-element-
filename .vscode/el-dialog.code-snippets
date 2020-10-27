@@ -1,0 +1,100 @@
+{
+	// Place your joinf-dbutils workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// 提示：使用代码片段生成工具快速生成片段：https://gitee.com/dyceit/code2snippet
+	// 片段变量使用说明：https://www.jianshu.com/p/8195b73319da
+	"helper_modal_open__js": {
+		"prefix": "helper_modal_open__js",
+		"body": [
+			"this.helper.modal.open(${2:demoDialog}, {",
+			"\tparent: this,",
+			"\tpropsData: {},",
+			"\tdata: {}",
+			"\t}).then(res => {",
+			"\t\tconsole.log(res)",
+			"\t}).catch(() => {})",
+		],
+		"description": "打开弹窗"
+	},
+	"el-dialog__file": {
+		"prefix": "el-dialog__file",
+		"body": [
+			"<template>",
+			"<el-dialog",
+			":close-on-click-modal=\"false\"",
+			":visible.sync=\"visible\"",
+			"title=''",
+			"width=\"${2|500px,400px,600px,720px,980px,1100px|}\"",
+			"custom-class=\"${3|el-dialog-form,el-dialog-fullscreen,el-dialog-custom|}\"",
+			"@close=\"reject\">",
+			"<!-- 注 : 弹框尺寸规范：宽度分别为400px、500px、600px、720px、980px、1100px，高度限520px以内，内容一屏展示不完加滚动条；",
+			"一般情况标题和内容离左右外边框距离20px,表单的标题字段固定宽度为6个字宽度（一般为72px）,表单为两列时，两列间距为10px。 ",
+			"custom-class: el-dialog-fullscreen全屏、el-dialog-form表单、el-dialog-custom上填充为0-->",
+			"",
+			"<div slot=\"footer\" class=\"dialog-footer\">",
+			"<el-button size=\"small\" @click=\"reject\">{{$$t('button.cancel')}}<\/el-button>",
+			"<el-button size=\"small\" type=\"primary\" @click=\"save\">{{$$t('button.save')}}<\/el-button>",
+			"<\/div>",
+			"<\/el-dialog>",
+			"<\/template>",
+			"",
+			"<script>",
+			"export default {",
+			"name: '$TM_FILENAME_BASE',",
+			"data() {",
+			"return {",
+			"visible: false,",
+			"}",
+			"},",
+			"methods: {",
+			"save() {",
+			"console.log('save button clicked.')",
+			"},",
+			"}",
+			"}",
+			"<\/script>",
+			"",
+			"<style lang=\"scss\" scoped>",
+			"",
+			"<\/style>",
+		],
+		"description": ""
+	},
+	"el-dialog__html": {
+		"prefix": "el-dialog__html",
+		"body": [
+			"<el-dialog",
+			":close-on-click-modal=\"false\"",
+			":visible.sync=\"visible\"",
+			"title=''",
+			"width=\"${2:500px}\"",
+			"custom-class=\"el-dialog-form\"",
+			"@close=\"reject\">",
+			"<!-- 注 : 弹框尺寸规范：宽度分别为400px、500px、600px、720px、980px、1100px，高度限520px以内，内容一屏展示不完加滚动条；",
+			"一般情况标题和内容离左右外边框距离20px,表单的标题字段固定宽度为6个字宽度（一般为72px）,表单为两列时，两列间距为10px。 ",
+			"custom-class: el-dialog-fullscreen全屏、el-dialog-form表单、el-dialog-custom上填充为0-->",
+			"",
+			"<div slot=\"footer\" class=\"dialog-footer\">",
+			"<el-button size=\"small\" @click=\"reject\">{{$$t('button.cancel')}}<\/el-button>",
+			"<el-button size=\"small\" type=\"primary\" @click=\"save('ruleForm')\">{{ $$t('button.save') }}<\/el-button>",
+			"<\/div>",
+			"<\/el-dialog>",
+			"$0"
+		],
+		"description": ""
+	},
+}

@@ -1,0 +1,209 @@
+{
+	// Place your joinf-dbutils workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// 提示：使用代码片段生成工具快速生成片段：https://gitee.com/dyceit/code2snippet
+	// 片段变量使用说明：https://www.jianshu.com/p/8195b73319da
+	// el-form
+	"el-form__html": {
+		"prefix": "el-form__html",
+		"body": [
+			"<el-form ref=\"ruleForm\" :model=\"ruleForm\" :rules=\"rules\" size=\"small\" label-width=\"100px\">",
+			"$0",
+			"</el-form>"
+		],
+		"description": "表单容器-默认"
+	},
+	"el-form_detail__html": {
+		"prefix": "el-form_detail__html",
+		"body": [
+			"<el-form ref=\"detailForm\" size=\"small\" label-width=\"100px\" class=\"detail-form\">",
+			"$0",
+			"</el-form>"
+		],
+		"description": "表单容器-详情"
+	},
+	"el-form-item_input__html": {
+		"prefix": "el-form-item_input__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:bName}\">",
+			"\t<el-input v-model=\"ruleForm.${2:bName}\" placeholder=\"请输入\" clearable size='small'></el-input>",
+			"</el-form-item>"
+		],
+		"description": "表单-文本框"
+	},
+	"el-form-item_input_number__html": {
+		"prefix": "el-form-item_input_number__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:bName}\">",
+			"\t<el-input v-model.number=\"ruleForm.${2:bName}\" :placeholder=\"请输入\" clearable size='small'></el-input>",
+			"</el-form-item>"
+		],
+		"description": "表单-数字文本框"
+	},
+	"el-form-item_textarea__html": {
+		"prefix": "el-form-item_textarea__html",
+		"body": [
+			"<el-form-item :label='' prop=\"${2:memo}\">",
+			"\t<el-input v-model=\"ruleForm.${2:memo}\" :autosize=\"{ minRows: 2, maxRows: 4}\" :placeholder=\"$t('tips.inputMemo')\" type=\"textarea\" clearable size='small'></el-input>",
+			"</el-form-item>"
+		],
+		"description": "表单-文本域"
+	},
+	"el-form-item_select__html": {
+		"prefix": "el-form-item_select__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:bType}\">",
+			"\t<el-select v-model=\"ruleForm.${2:bType}\" :placeholder='请选择' clearable>",
+			"\t\t<el-option v-for=\"item in showPositionOptions\" :label=\"item.label\" :value=\"item.value\" :key=\"item.value\" />",
+			"\t</el-select>",
+			"</el-form-item>"
+		],
+		"description": "表单-下拉框"
+	},
+	"el-form-item_checkbox__html": {
+		"prefix": "el-form-item_checkbox__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:bType}\">",
+			"\t<el-checkbox-group v-model=\"ruleForm.${2:bType}\">",
+			"<!-- 手写 -->",
+			"\t\t<el-checkbox label=\"1\">{{ $$t('title.publicScheme') }}</el-checkbox>",
+			"<!-- 循环 -->",
+			"\t\t<el-checkbox v-for=\"item in schemeTypeOptions\" :label=\"item.value\" :key=\"item.value\">{{ item.label }}</el-checkbox>",
+			"\t</el-checkbox-group>",
+			"</el-form-item>"
+		],
+		"description": "表单-多选框"
+	},
+	"el-form-item_radio__html": {
+		"prefix": "el-form-item_radio__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:bType}\">",
+			"\t<el-radio-group v-model=\"ruleForm.${2:bType}\">",
+			"<!-- 手写 -->",
+			"\t\t<el-radio label=\"1\">{{ $$t('title.publicScheme') }}</el-radio>",
+			"<!-- 循环 -->",
+			"\t\t<el-radio v-for=\"item in schemeTypeOptions\" :label=\"item.value\" :key=\"item.value\">{{ item.label }}</el-radio>",
+			"\t</el-radio-group>",
+			"</el-form-item>"
+		],
+		"description": "表单-单选框"
+	},
+	"el-form-item_switch__html": {
+		"prefix": "el-form-item_switch__html",
+		"body": [
+			"<el-form-item label='' prop=\"${2:disable}\">",
+			"\t<el-switch v-model=\"ruleForm.${2:disable}\" :active-value=\"1\" :inactive-value=\"0\" />",
+			"</el-form-item>",
+			""
+		],
+		"description": "表单-开关"
+    },
+    "ruleForm_rules__js": {
+		"prefix": "ruleForm_rules__js",
+		"body": [
+			"ruleForm: {",
+			"\tbName: ''",
+			"},",
+			"rules: {",
+			"\tbName: [",
+			"\t\t{ required: true, message: '请输入', trigger: 'blur' }",
+			"\t]",
+			"}",
+			""
+		],
+		"description": "ruleForm_rules__js"
+    },
+    "form_rules_input__js": {
+		"prefix": "form_rules_input__js",
+		"body": [
+			"{ required: true, message: '${1:请输入名称}', trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"form_rules_input_number__js": {
+		"prefix": "form_rules_input_number__js",
+		"body": [
+			"{ required: true, type: 'number', message: '${1:请输入数字类型}', trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"form_rules_select__js": {
+		"prefix": "form_rules_select__js",
+		"body": [
+			"{ required: true, message: '${1:请选择类型}', trigger: 'change' },"
+		],
+		"description": ""
+	},
+	"form_rules_checkbox__js": {
+		"prefix": "form_rules_checkbox__js",
+		"body": [
+			"{ required: true, type: 'array', message: '${1:请至少选择一个性质}', trigger: 'change' },"
+		],
+		"description": ""
+	},
+	"form_rules_datetime__js": {
+		"prefix": "form_rules_datetime__js",
+		"body": [
+			"{ required: true, type: 'date', message: '${1:请选择日期}', trigger: 'change' },"
+		],
+		"description": ""
+	},
+	// rules length
+	"form_rules_min_max_length__js": {
+		"prefix": "form_rules_min_max_length__js",
+		"body": [
+			"{ min: ${1:1}, max: ${2:30}, message: '长度在 ${1:1} 到 ${2:30} 个字符', trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"form_rules_min_length__js": {
+		"prefix": "form_rules_min_length__js",
+		"body": [
+			"{ min: ${1:1}, message: '最少 ${1:1} 个字符', trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"form_rules_max_length__js": {
+		"prefix": "form_rules_max_length__js",
+		"body": [
+			"{ max: ${2:30}, message: '最多 ${2:30} 个字符', trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"form_rules_validator__js": {
+		"prefix": "form_rules_validator__js",
+		"body": [
+			"{ validator: validateRules, trigger: 'blur' },"
+		],
+		"description": ""
+	},
+	"ruleForm_reset_form__js": {
+		"prefix": "ruleForm_reset_form__js",
+		"body": [
+			"this.$refs.ruleForm.resetFields()"
+		],
+		"description": "重置表单"
+	},
+	"ruleForm_clear_validate__js": {
+		"prefix": "ruleForm_clear_validate__js",
+		"body": [
+			"this.$refs.ruleForm.clearValidate()"
+		],
+		"description": "重置表单验证"
+	},
+	//
+}

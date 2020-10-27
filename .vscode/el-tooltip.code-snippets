@@ -1,0 +1,84 @@
+{
+	// Place your joinf-dbutils workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// 提示：使用代码片段生成工具快速生成片段：https://gitee.com/dyceit/code2snippet
+	// 片段变量使用说明：https://www.jianshu.com/p/8195b73319da
+	"el-tooltip_right__html": {
+		"prefix": "el-tooltip_right__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:right}\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_top__html": {
+		"prefix": "el-tooltip_top__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:top}\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_left__html": {
+		"prefix": "el-tooltip_left__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:left}\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_bottom__html": {
+		"prefix": "el-tooltip_bottom__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:bottom}\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_light_right__html": {
+		"prefix": "el-tooltip_light__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:right}\" effect=\"light\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_light_left__html": {
+		"prefix": "el-tooltip_light_left__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:left}\" effect=\"light\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_light_top__html": {
+		"prefix": "el-tooltip_light_top__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:top}\" effect=\"light\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+	"el-tooltip_light_bottom__html": {
+		"prefix": "el-tooltip_light_bottom__html",
+		"body": [
+			"<el-tooltip :enterable=\"false\" :open-delay=\"300\" content=\"${1:提示内容}\" placement=\"${2:bottom}\" effect=\"light\">",
+			"</el-tooltip>"
+		],
+		"description": ""
+	},
+}

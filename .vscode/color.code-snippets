@@ -1,0 +1,44 @@
+{
+  "text-primary": {
+    "prefix": "text-primary",
+    "body": [
+      "$--color-primary"
+    ]
+  },
+  "text-default": {
+    "prefix": "text-primary",
+    "body": [
+      "$--color-text-primary"
+    ]
+  },
+  "text-regular": {
+    "prefix": "text-regular",
+    "body": [
+      "$--color-text-regular"
+    ]
+  },
+  "text-secondary": {
+    "prefix": "text-secondary",
+    "body": [
+      "$--color-text-secondary"
+    ]
+  },
+  "text-placeholder": {
+    "prefix": "text-placeholder",
+    "body": [
+      "$--color-text-placeholder"
+    ]
+  },
+  "border-base": {
+    "prefix": "border-base",
+    "body": [
+      "$--border-color-base"
+    ]
+  },
+  "bg-base": {
+    "prefix": "bg-base",
+    "body": [
+      "$--background-color-base"
+    ]
+  }
+}

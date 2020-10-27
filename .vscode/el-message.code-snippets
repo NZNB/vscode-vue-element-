@@ -1,0 +1,106 @@
+{
+  "el-message__error": {
+    "prefix": "el-message__error",
+    "description": "el-message_error",
+    "body": [
+      "this.$$message.error('$1');",
+      ""
+    ]
+  },
+  "el-message__success": {
+    "prefix": "el-message__success",
+    "description": "el-message_success",
+    "body": [
+      "this.$$message.success('$1');",
+      ""
+    ]
+  },
+  "el-message__warning": {
+    "prefix": "el-message__warning",
+    "description": "el-message_warning",
+    "body": [
+      "this.$$message.warning('$1');",
+      ""
+    ]
+  },
+  "el-message__info": {
+    "prefix": "el-message__info",
+    "description": "el-message_info",
+    "body": [
+      "this.$$message.info('$1');",
+      ""
+    ]
+  },
+  "el-message_success__close": {
+    "prefix": "el-message_success__close",
+    "description": "successMessage-可关闭",
+    "body": [
+      " this.$message({",
+      "     showClose: true,",
+      "     message: '$1',",
+      "        type: 'success'",
+      " });"
+    ]
+  },
+  "el-message_error__close": {
+    "prefix": "el-message_error__close",
+    "description": "errorMessage-可关闭",
+    "body": [
+      " this.$message({",
+      "     showClose: true,",
+      "     message: '$1',",
+      "     type: 'error'",
+      " });"
+    ]
+  },
+  "el-message_warning__close": {
+    "prefix": "el-message_warning__close",
+    "description": "warningMessage-可关闭",
+    "body": [
+      " this.$message({",
+      "     showClose: true,",
+      "     message: '$1',",
+      "      type: 'warning'",
+      " });"
+    ]
+  },
+  "el-message_info__close": {
+    "prefix": "el-message_info__close",
+    "description": "infoMessage-可关闭",
+    "body": [
+      " this.$message({",
+      "     showClose: true,",
+      "     message: '$1',",
+      "     type: 'info'",
+      " });"
+    ]
+  },
+  "el-message__alert": {
+    "prefix": "el-message__alert",
+    "description": "消息弹框",
+    "body": [
+      "this.$$alert('这是一段内容', '标题名称', {",
+      "          confirmButtonText: this.$$t('btn.confirm'),",
+      "          callback: action => {",
+      "            this.$message({",
+      "              type: 'info',",
+      "              message: '$1'",
+      "            });",
+      "          }",
+      "        });"
+    ]
+  },
+  "el-message__confirm": {
+    "prefix": "el-message__confirm",
+    "description": "confirm消息弹框",
+    "body": [
+      "this.$$confirm(' 是否继续?', this.$$t('base.tip'), {",
+      "confirmButtonText: this.$$t('button.confirm'),",
+      "cancelButtonText: this.$$t('button.cancel'),",
+      "type: 'warning',",
+      "}).then(() => {",
+      "}).catch(() => {",
+      "})"
+    ]
+  }
+}

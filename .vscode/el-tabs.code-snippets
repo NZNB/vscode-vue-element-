@@ -1,0 +1,26 @@
+{
+  "el-tabs__html": {
+    "prefix": "el-tabs__html",
+    "description": "tabs切换",
+    "body": [
+      "<el-tabs v-model=\"\" class=\"tabs-full\">\r",
+      "    <el-tab-pane label=\"用户管理\" name=\"first\">用户管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"配置管理\" name=\"second\">配置管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"角色管理\" name=\"third\">角色管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"定时任务补偿\" name=\"fourth\">定时任务补偿</el-tab-pane>\r",
+      "  </el-tabs>"
+    ]
+  },
+  "el-tabs_card__html": {
+    "prefix": "el-tabs_card__html",
+    "description": "tabs切换",
+    "body": [
+      "<el-tabs v-model=\"\" type=\"card\" @tab-click=\"handleClick\">\r",
+      "    <el-tab-pane label=\"用户管理\" name=\"first\">用户管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"配置管理\" name=\"second\">配置管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"角色管理\" name=\"third\">角色管理</el-tab-pane>\r",
+      "    <el-tab-pane label=\"定时任务补偿\" name=\"fourth\">定时任务补偿</el-tab-pane>\r",
+      "  </el-tabs>"
+    ]
+  }
+}

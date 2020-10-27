@@ -1,0 +1,32 @@
+{
+  "el-tag__primary": {
+    "prefix": "el-tag__primary",
+    "body": [
+      "<el-tag type=\"primary\">${1}</el-tag>"
+    ]
+  },
+  "el-tag__success": {
+    "prefix": "el-tag__success",
+    "body": [
+      "<el-tag type=\"success\">${1}</el-tag>"
+    ]
+  },
+  "el-tag__info": {
+    "prefix": "el-tag__info",
+    "body": [
+      "<el-tag type=\"info\">${1}</el-tag>"
+    ]
+  },
+  "el-tag__warning": {
+    "prefix": "el-tag__warning",
+    "body": [
+      "<el-tag type=\"warning\">${1}</el-tag>"
+    ]
+  },
+  "el-tag__danger": {
+    "prefix": "el-tag__danger",
+    "body": [
+      "<el-tag type=\"danger\">${1}</el-tag>"
+    ]
+  }
+}

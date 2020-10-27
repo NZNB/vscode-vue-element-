@@ -1,0 +1,23 @@
+{
+  "el-scrollbar": {
+    "prefix": "el-scrollbar_html",
+    "body": [
+      "<el-scrollbar></el-scrollbar>"
+    ],
+    "description": "基础滚动条-html"
+  },
+  "el-scrollbar-nosize": {
+    "prefix": "el-scrollbar-nosize_html",
+    "body": [
+      "<el-scrollbar :nosize=\"false\"></el-scrollbar>"
+    ],
+    "description": "固定宽度滚动条提升性能"
+  },
+  "el-scrollbar-style": {
+    "prefix": "el-scrollbar-sytle_html",
+    "body": [
+      "<el-scrollbar wrapStyle=\"\" viewStyle=\"\"></el-scrollbar>"
+    ],
+    "description": "添加样式的滚动条"
+  }
+}

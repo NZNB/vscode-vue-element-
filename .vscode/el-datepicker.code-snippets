@@ -1,0 +1,111 @@
+{
+  "el-date_default__html": {
+    "prefix": "el-date_default__html",
+    "description": "默认日期选择器",
+    "body": [
+      "<el-date-picker\r",
+      "      v-model=\"\"",
+      "      size=\"small\"",
+      "      align=\"right\"",
+      "      type=\"date\"\r",
+      "      unlink-panels",
+      "      format=\"yyyy-MM-dd\"",
+      "      value-format='yyyy-MM-dd HH:mm:ss'",
+      "      placeholder=\"选择日期\">\r",
+      "      @change='handleDateChange'>",
+      "    </el-date-picker>"
+    ]
+  },
+  "el-date_default_options__html": {
+    "prefix": "el-date_default__html",
+    "description": "默认日期选择器",
+    "body": [
+      "<el-date-picker\r",
+      "      v-model=\"\"",
+      "      size=\"small\"",
+      "      align=\"right\"",
+      "      type=\"date\"\r",
+      "      unlink-panels",
+      "      format=\"yyyy-MM-dd\"",
+      "      value-format='yyyy-MM-dd HH:mm:ss'",
+      "      :picker-options=\"pickerOptions\"",
+      "      placeholder=\"选择日期\">\r",
+      "      @change='handleDateChange'>",
+      "    </el-date-picker>"
+    ]
+  },
+  "el-date_range__html": {
+    "prefix": "el-date_default__html",
+    "description": "默认日期选择器",
+    "body": [
+      "<el-date-picker\r",
+      "      v-model=\"\"",
+      "      size=\"small\"",
+      "      align=\"right\"",
+      "      type=\"daterange\"\r",
+      "      unlink-panels",
+      "      format=\"yyyy-MM-dd\"",
+      "      value-format='yyyy-MM-dd HH:mm:ss'",
+      "      range-separator=\"至\"",
+      "      :picker-options=\"pickerOptions\"",
+      "      start-placeholder=\"开始日期\"",
+      "      end-placeholder=\"结束日期\"",
+      "      @change='handleDateChange'>",
+      "    </el-date-picker>"
+    ]
+  },
+  "el-date_range_options__html": {
+    "prefix": "el-date_default__html",
+    "description": "默认日期选择器",
+    "body": [
+      "<el-date-picker\r",
+      "      v-model=\"\"",
+      "      size=\"small\"",
+      "      align=\"right\"",
+      "      type=\"daterange\"\r",
+      "      unlink-panels",
+      "      range-separator=\"至\"",
+      "      format=\"yyyy-MM-dd\"",
+      "      value-format='yyyy-MM-dd HH:mm:ss'",
+      "      :picker-options=\"pickerOptions\"",
+      "      start-placeholder=\"开始日期\"",
+      "      end-placeholder=\"结束日期\"",
+      "      :picker-options=\"pickerOptions\"",
+      "      @change='handleDateChange'>",
+      "    </el-date-picker>"
+    ]
+  },
+  "el-date-pickoptions": {
+    "prefix": "el-date-pickoptions",
+    "description": "日期范围pickoptions",
+    "body": [
+      "pickerOptions: {\r",
+      "          shortcuts: [{\r",
+      "            text: '最近一周',\r",
+      "            onClick(picker) {\r",
+      "              const end = new Date();\r",
+      "              const start = new Date();\r",
+      "              start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);\r",
+      "              picker.$$emit('pick', [start, end]);\r",
+      "            }\r",
+      "          }, {\r",
+      "            text: '最近一个月',\r",
+      "            onClick(picker) {\r",
+      "              const end = new Date();\r",
+      "              const start = new Date();\r",
+      "              start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);\r",
+      "              picker.$$emit('pick', [start, end]);\r",
+      "            }\r",
+      "          }, {\r",
+      "            text: '最近三个月',\r",
+      "            onClick(picker) {\r",
+      "              const end = new Date();\r",
+      "              const start = new Date();\r",
+      "              start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);\r",
+      "              picker.$$emit('pick', [start, end]);\r",
+      "            }\r",
+      "          }]\r",
+      "        },"
+    ]
+  }
+}
